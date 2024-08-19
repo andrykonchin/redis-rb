@@ -94,8 +94,6 @@ jobs:
         run: make start
       - name: Test
         run: bundle exec rake test:${{ matrix.suite }}
-      - name: Shutting down Redis
-        run: make stop
 
   drivers:
     name: Driver
